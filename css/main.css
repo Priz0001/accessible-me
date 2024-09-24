@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: rgb(245, 245, 245);
+  background-color: #b1dd9e;
   /* changes background color to fix contrast issues */
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@ body {
   /* increases font size of the content */
   line-height: 1.4;
   /* adds space between lines to improve text readability */
+  color: #102209;
 }
 
 h1,
@@ -23,6 +24,19 @@ h6 {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.skip-links a {
+  color:#345f21;
+
+}
+
+.skip-links a:hover {
+  color: #70a459;
+}
+
+.skip-links a:visited {
+  color: #102209;
 }
 
 img {
@@ -50,10 +64,11 @@ img {
   font-size: 1.25rem;
   padding: 15px;
   /* adds padding to the anchor tags to increase the clickable area of the menu bar*/
+  background-color: #70a459;
 }
 
-a:hover {
-background-color:rgb(190, 193, 238);
+.main-nav a:hover {
+  background-color: #d6e2d1;
 /* adds a hover effect to increase accessibility */
 }
 
@@ -63,6 +78,8 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  background-color:#daf1d1;
+  border: solid 1px black;
 }
 
 form textarea {
@@ -74,7 +91,7 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 1rem;
   text-transform: uppercase;
 }
