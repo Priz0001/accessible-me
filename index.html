@@ -14,11 +14,11 @@
 
 <body>
   <div class="container">
-    <div class="skip-links">
+    <ul class="skip-links">
       <li><a href="#nav">Skip to main nav</a></li>
       <li><a href="#main">Skip to main content</a></li>
       <!-- adds skip links -->
-    </div>
+    </ul>
     <header role="banner" class="site-header">
       <!-- changes the div tag to a header tag for appropriate html semantics -->
       <h1>Jam Box Studios</h1>
@@ -35,19 +35,19 @@
       <!-- adds the alt attribute for accessbility -->
     </header>
     <main class="main-content">
-      <h1 id="main">Welcome to Jam Box</h1>
+      <h2 id="main">Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <section class="owner">
         <!-- changes the div tag to a section tag for better semantics -->
-        <h1>Meet the owner</h1>
+        <h3>Meet the owner</h3>
         <ul itemscope itemtype="https://schema.org/Person">
           <li>Name: <span itemprop="name">John Doe</span>span></li>
           <li>Title: <span itemprop="jobTitle">CEO</span></li>
           <li>Email: <span itemprop="email">johnjoe@jambox.ca</span></li>
           <li>Phone: <span itemprop="telephone">613-000-0000</span></li>
         </ul>
-        <h1>Address</h1>
+        <h3>Address</h3>
         <!-- <div itemscope itemtype="https://schema.org/Person"> -->
           <div itemscope itemtype="https://schema.org/PostalAddress">
             <span itemprop="name">Jambox Studios</span>
@@ -59,7 +59,7 @@
         </ul>
       </section>
       <section class="contact-section">
-        <h1>Contact Us</h1>
+        <h3>Contact Us</h3>
         <form action="thanks.html">
           <div>
             <label for="fullname">Full Name</label>
