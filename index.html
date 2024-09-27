@@ -21,8 +21,7 @@
     </div>
     <header role="banner" class="site-header">
       <!-- changes the div tag to a header tag for appropriate html semantics -->
-      <h1 role="heading">Jam Box Studios</h1>
-      <!-- adds landmark role 'heading' -->
+      <h1>Jam Box Studios</h1>
       <nav class="main-nav">
         <!-- changes the div tag to a nav tag for appropriate html semantics -->
         <ul id="nav">
@@ -35,7 +34,7 @@
       <img src="https://placekitten.com/1200/900" alt="kitten on the grass" class="banner">
       <!-- adds the alt attribute for accessbility -->
     </header>
-    <div role="main" class="main-content">
+    <main class="main-content">
       <!-- adds landmark role 'main' to improve accessibility -->
       <h1 id="main">Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
@@ -44,14 +43,14 @@
         <!-- changes the div tag to a section tag for better semantics -->
         <h1>Meet the owner</h1>
         <ul itemscope itemtype="https://schema.org/Person">
-          <li itemprop="name">Name: John Doe</li>
-          <li itemprop="jobTitle">Title: CEO</li>
-          <li itemprop="email">Email: johnjoe@jambox.ca</li>
-          <li itemprop="telephone">Phone: 613-000-0000</li>
+          <li>Name: <span itemprop="name">John Doe</span>span></li>
+          <li>Title: <span itemprop="jobTitle">CEO</span></li>
+          <li>Email: <span itemprop="email">johnjoe@jambox.ca</span></li>
+          <li>Phone: <span itemprop="telephone">613-000-0000</span></li>
         </ul>
         <h1>Address</h1>
-        <div itemscope itemtype="https://schema.org/Person">
-          <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <!-- <div itemscope itemtype="https://schema.org/Person"> -->
+          <div itemscope itemtype="https://schema.org/PostalAddress">
             <span itemprop="name">Jambox Studios</span>
             <span itemprop="streetAddress">123 Guitar Road,</span>
             <span itemprop="addressRegion">Musicville, Danceistan</span>
@@ -85,7 +84,7 @@
           <button type="submit">Send</button>
         </form>
       </section>
-    </div>
+    </main>
     <footer role="contentinfo" class="site-footer">
       &copy; 2021 Jam Box Studios
     </footer>
